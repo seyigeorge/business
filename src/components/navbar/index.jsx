@@ -23,11 +23,12 @@ const AccessibilityContainer = styled.div`
 const LoginButton = styled(Button)`
   background-color: transparent;
   border: none;
+  color: #5271ff;
 
   &:hover {
     background-color: transparent;
     border: none;
-    color: rgb(212, 212, 212);
+    color: #5271ff;
   }
 `;
 

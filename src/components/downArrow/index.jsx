@@ -8,7 +8,7 @@ const ArrowContainer = styled.div`
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background-color: rgba(113, 113, 113, 0.48);
+  background-color: ${theme.primary};
   display: flex;
   justify-content: center;
   align-items: center;

@@ -8,9 +8,9 @@ const CardContainer = styled.div`
   width: 350px;
   height: 430px;
   background-color: #fff;
-  box-shadow: 0px 0px 7px rgba(17, 17, 17, 0.2);
-  border-radius: 3px;
-  margin: 5px 0;
+  box-shadow: 5px 5px 7px rgba(17, 17, 17, 0.2);
+  border-radius: 9px;
+  margin: 5px 5px;
   position: relative;
   padding: 10px 1.2em;
 `;
@@ -31,13 +31,7 @@ const ReviewText = styled.p`
   justify-content: center;
 `;
 
-const Line = styled.span`
-  min-width: 100%;
-  min-height: 1px;
-  margin-bottom: 1em;
-  background-color: #cdcdcd;
-  display: flex;
-`;
+
 
 const UserDetails = styled.div`
   display: flex;
@@ -66,8 +60,7 @@ export function ReviewCard(props) {
       </QuoteIcon>
       <Marginer direction="vertical" margin="6em" />
       <ReviewText>{reviewText}</ReviewText>
-      <Marginer direction="vertical" margin="7em" />
-      <Line />
+      <Marginer direction="vertical" margin="3em" />
       <UserDetails>
         <UserImg src={userImgUrl} />
         <Username>{username}</Username>

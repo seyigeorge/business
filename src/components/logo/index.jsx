@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-import BeemaLogo from "../../assets/logo/logo_croped.png";
+import BeemaLogo from "../../assets/logo/logo.png";
 import { theme } from "../../theme";
 
 const LogoContainer = styled.div`
@@ -34,7 +34,8 @@ const LogoText = styled.div`
   margin-top: ${({ inline }) => (inline ? 0 : "6px")};
   font-size: ${({ inline, small }) =>
     inline ? "18px" : small ? "23px" : "40px"};
-  color: ${({ inline }) => (inline ? "#fff" : theme.primary)};
+  colorss: ${({ inline }) => (inline ? "#fff" : theme.primary)};
+  color: #5271ff;
   font-weight: 900;
 `;
 
@@ -45,7 +46,7 @@ export function Logo(props) {
     <LogoContainer inline={inline} small={small}>
       <LogoImg src={BeemaLogo} inline={inline} small={small} />
       <LogoText inline={inline} small={small}>
-        Beema
+        Aline
       </LogoText>
     </LogoContainer>
   );

@@ -4,15 +4,20 @@ import styled from "styled-components";
 import { Button } from "../button";
 import { Logo } from "../logo";
 import { Marginer } from "../marginer";
-import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faLinkedin, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import BackgroundImg from "../../assets/pictures/footer.jpg";
+
 
 const FooterContainer = styled.div`
   width: 100%;
   height: 500px;
   display: flex;
   flex-direction: column;
+  background-color: rgba(55, 55, 55, 0.89);
+
+  background-image: url(${BackgroundImg});
+
   align-items: center;
-  background-color: #1f1f1f;
   position: relative;
 `;
 
@@ -110,10 +115,10 @@ export function Footer(props) {
       <Marginer direction="vertical" margin="5em" />
       <Logo small />
       <Marginer direction="vertical" margin="1em" />
-      <MotivationalText>Just say the magical word</MotivationalText>
-      <MotivationalText>and we will do the rest</MotivationalText>
+      <MotivationalText>We Can help you in your </MotivationalText>
+      <MotivationalText>business and help you grow</MotivationalText>
       <Marginer direction="vertical" margin="1em" />
-      <Button>Start your Project</Button>
+      <Button>Contact Us Now</Button>
       <Marginer direction="vertical" margin="5em" />
       <AccessibilityContainer>
         <PrivacyContainer>
@@ -128,9 +133,15 @@ export function Footer(props) {
           <SocialIcon>
             <FontAwesomeIcon icon={faLinkedin} />
           </SocialIcon>
+          <SocialIcon>
+            <FontAwesomeIcon icon={faFacebook} />
+          </SocialIcon>
+          <SocialIcon>
+            <FontAwesomeIcon icon={faInstagram} />
+          </SocialIcon>
         </SocialContainer>
       </AccessibilityContainer>
-      <RightsReserved>&copy; 2020 Beema All rights reserved</RightsReserved>
+      <RightsReserved>&copy; 2021 Aline | All rights reserved</RightsReserved>
     </FooterContainer>
   );
 }

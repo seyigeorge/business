@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 import styled from "styled-components";
 import { SectionTitle } from "../../components/sectionTitle";
 
-import AboutImgUrl from "../../assets/illustrations/rocket_launch_.png";
+import AboutImgUrl from "../../assets/illustrations/v4.jpg";
 
 const MoreAboutContainer = styled(Element)`
   min-height: 500px;
@@ -45,12 +45,12 @@ const AboutImg = styled.img`
 `;
 
 export function MoreAboutSection(props) {
-  return (
+  return (    
     <MoreAboutContainer>
-      <SectionTitle>More About Beema</SectionTitle>
+      <SectionTitle>More About Aline</SectionTitle>
       <AboutContainer>
         <AboutText>
-          Beema is about designing, building and deliverying best quality
+          Aline is about designing, building and deliverying best quality
           software for your company. {<br />}
           {<br />} We make sure that you get the best software inferstracture
           and set of applications to ensure the best experience of your clients.{" "}
